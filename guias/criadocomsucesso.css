@@ -1,0 +1,60 @@
+.text-primary {
+  color: #bd0003 !important;
+}
+
+.btn-primary {
+  background-color: #bd0003 !important;
+  border: 1px solid #7f0000 !important;
+}
+
+.bg-dark {
+  background-color: #7f0000 !important;
+}
+
+.centralizar {
+  text-align: center;
+}
+
+.center-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rounded-div {
+  display: inline-block;
+  background-color: white;
+  width: 80%;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.rounded-div .custom-button {
+  background-color: white;
+  color: black;
+}
+
+.text-orange {
+  color: #ff6c3e;
+}
+
+.footer-custom {
+  height: 250px;
+}
+
+.centralizar {
+  padding: 1px;
+}
+
+.custom-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.btn-secondary.custom-buttom{
+  width: 115px;
+  background-color: #bd0003;
+}
+.btn-secondary.custom-buttom:hover{
+  background-color: black;
+}

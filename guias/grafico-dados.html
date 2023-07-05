@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Quantidade de Pessoas'],
+          ['Confirmados', 75],
+          ['Talvez', 35],
+          ['Não vão', 15],
+        ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.4,
+          colors: ['#00cc00', '#ffff00', '#ff0000'],
+          legend: { textStyle: { fontSize: 12 }, alignment: 'center' }
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <div id="donutchart" style="width: 430px; height: 240px;"></div>
+</body>
+</html>

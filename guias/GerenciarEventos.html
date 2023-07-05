@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Gerenciador de Eventos</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- linkado bootstrap-->
+  <link href="gerenciareventos.css" rel="stylesheet"> <!--linkado no css da página-->
+  <script src="https://kit.fontawesome.com/0181f8b5db.js" crossorigin="anonymous"></script> <!--ñ sei tbm-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!--para uso de icones-->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+</head>
+
+<body >
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h4 class="display-6" style="font-weight: 700;"><span class="text-primary">Par</span><span class="text-orange">tie</span></h4>
+        </a>
+        <div class="d-flex align-items-center justify-content-center">
+          <h4 class="mb-0 ms-3" style="color: purple;">
+            <a href="#" style="color: #ff6c3e; text-decoration: none;">Gerenciador de Eventos</a>
+            </h4>
+        </div>
+        <div class="d-flex align-items-center" role="search">
+          <button style="background: none; border: none;" class="me-2">
+            <i class="fa-regular fa-circle-question fa-lg" style="color: #000000;"></i>
+          </button>
+          <h4>
+            <div id="toggleButton" class="dropdown">
+              <button  class="btn btn-link dropdown-toggle btn-icon-only" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span  class="button_user">
+                  <span class="fa-stack fa-lg alinhar">
+                    <i class="fas fa-circle fa-stack-2x fa-fw custom-circle"></i>
+                    <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                  </span>
+                </span>
+              </button>
+              <ul dropdownMenu class="dropdown-menu">
+                <div class="card mb-3 custom-card" id="menuDrop">
+                  <div class="card-header bg-transparent textured-header">
+                    <div class="text-center">
+                        <i class="fas fa-user fa-3x pintar"></i>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title ">Agendamentos</h5>
+                      <div id="carousel1" class="carousel slide">
+                        <div class="carousel-indicators seta-color">
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../Imagens/festverao.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../Imagens/nuvem2.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../Imagens/nuvem2.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      </div>
+                      <div class="card-footer bg-transparent ">
+                      <div class="text-center">
+                        <button class="Btn"><!--Botão especial-->
+                          <div class="sign"><svg viewBox="0 0 512 512"><path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"></path></svg></div>
+                          <a href="index.html">
+                            <div class="text">Logout</div>
+                          </a>
+                        </button>                 
+                      </div>
+                    </div>
+                  </div> 
+                </ul>
+              </div>
+              </div>
+           </h4>
+    </nav>
+  </header>
+  
+  <!--Disposição dos cards-->
+  <main class="box ">
+    <div class="container2 mb-3">
+      <!--Card evento-->
+      <div class="row mt-5">
+        <div class="col-sm-12 col-md-5">
+          <div class="card mb-3 pb-5" >
+            <div class="card-header bg-transparent header-evento border-0"><h5>Evento</h5></div>
+            <div class="card-body">
+              <div class="corpo-eventos">
+                <div id="CarouselEventos" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../Imagens/festverao.png" class="custom-img1" alt="Imagem 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Imagens/nuvem2.png" class="custom-img1" alt="Imagem 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../Imagens/nuvem2.png" class="custom-img1" alt="Imagem 3">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev custom-prev disabled" type="button" data-bs-target="#CarouselEventos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next custom-next disabled" type="button" data-bs-target="#CarouselEventos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon custom-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                
+                <script src="../guias/gerenciareventos.js"></script>
+              </div>
+            </div>
+            <div class="card-footer bg-transparent border-0 mt-5">
+  
+              <div class="input-group mb-3 movable">
+                <input type="text" class="form-control custom-input" placeholder="Nome do Evento" value="FEST VERÃO RENDENÇÃO" aria-label="Nome do Evento" aria-describedby="button-addon1">
+                <i class="fa fa-copy custom-icon"></i> <!-- Ícone de cópia -->
+              </div>
+              
+              <div class="input-group mb-3 movable2">
+                <input type="text" class="form-control custom-input" placeholder="Código do Evento" value="A57KJO" aria-label="Código do Evento" aria-describedby="button-addon2">
+                <i class="fa fa-copy custom-icon"></i> <!-- Ícone de cópia -->
+              </div>
+              
+              <div class="input-group mb-3 movable3">
+                <input type="text" class="form-control custom-input" placeholder="Link de Compartilhamento" value="https://partie.co/A57KJO" aria-label="Link de Compartilhamento" aria-describedby="button-addon3">
+                <i class="fa fa-copy custom-icon"></i> <!-- Ícone de cópia -->
+              </div>
+              
+            </div>
+          </div>
+          <!--Card Calendario-->
+          <div class="card mb-3" >
+            <div class="card-header bg-transparent border-0 header-calendario"><h5>Calendário</h5></div>
+            <div class="body-calendario">
+              <div class="espaco-img">
+                <div class="col-md-2"><!-- Data Incio-->
+                  <label for="dti" class="DataIn">Data de Inicio</label>
+                  <input type="datetime-local" class="DTI DataIn " id="meeting-time" name="dtin" value="2023-06-27 16:20" min="2023-06-27 T16:20">
+                </div>
+                <div class="col-md-2"><!-- Data Incio-->
+                  <label for="dti" class="DataIn">Data de Fim</label>
+                  <input type="datetime-local" class="DTI DataIn" id="meeting-time" name="dtin" value="2023-06-27 16:20" min="2023-06-27 T16:20">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card comentario-->
+          <div class="card mb-3" >
+            <div class="card-header bg-transparent header-comentario border-0"><h5>Descrição do Evento</h5></div>
+            <div class="card-body bory-comentario">
+              <div class="box-btn-calender">
+              <!-- Button trigger modal -->
+                <button type="button" class="btn btn-secondary edit-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Comente  
+                </button>
+              </div>
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Descrição</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea class="form-control edit-text" id="exampleFormControlTextarea1" rows="3" >
+            28 de março de 2013 - 28 de março de 2013 às 19:00 - 22:00
+  Praia da Enseada - São Francisco do Sul
+  Descrição do evento
+                        </textarea>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary edit-btn" data-bs-dismiss="modal">Salvar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script src="../guias/gerenciareventos.js"></script>
+  
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-6 ms-md-4">
+          <!--Card controle de convidados-->
+        <div class="card  mb-3  border-0" >
+          <div class="card-header bg-transparent header-controle border-0"><h5>Dados de Controle</h5></div>
+          <div class="card-body tela-dados ">  
+            <div class="box-dados">
+              <object data="../guias/grafico-dados.html" width="500px" height="275px"></object>
+            </div>
+          </div>
+        </div>
+        <!--Card maps-->
+        <div class="card border-0 mb-3">
+          <div class="card-header bg-transparent border-0 header-maps"><h5>Localização</h5></div>
+          <div class="card-body body-maps">
+            <div class="box-maps">
+              <div class="zoom">
+                <img src="../Imagens/maps1.png">
+              </div>
+             </div>  
+          </div>
+        </div>
+      </div>
+        </div>
+    </div>
+    <!--Box lateral-->
+    <div class="box-lateral">
+      <h5 class="letra">Meus Eventos</h5>
+      <a href="Criar_eventos.html">
+        <button type="button" class="btn btn-secondary btn-lateral1">Novo+</button>
+      </a>
+      <a href="GerenciarEventos.html">
+        <button type="button" class="btn btn-outline-dark btn-lateral2 border-0">Fest Verão</button>
+      </a>
+    </div>
+
+  </main>
+  <footer class="footer bg-dark text-light footer-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-0 p-3">
+          <div class="centralizar">
+            <h4>Contatos</h4>
+            <p>Joinville, SC, BR</p>
+            <p>e-mail: contato@partie.co</p>
+            <p>Whatsapp: +55 (47) 9999-9999</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0 p-3">
+          <div class="centralizar">
+            <h4>
+              <a class="navbar-brand" href="index.html">
+                <h4 class="display-6" style="font-weight: 700;">
+                  <span class="text-primary">Par</span><span class="text-orange">tie</span>
+                </h4>
+              </a>
+            </h4>
+            <p><a href="login.html" style="color: white; text-decoration: none;">Login</a></p>
+            <p><a href="registrar.html" style="color: white; text-decoration: none;">Cadastrar</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0 p-3">
+          <div class="centralizar">
+            <h4>Redes Sociais</h4>
+            <p><i class="fab fa-twitter"></i> @Partie</p>
+            <p><i class="fab fa-instagram"></i> @Partie</p>
+          </div>
+        </div>
+      </div>
+      <hr style="margin-top: 0.1rem; margin-bottom: 0.1rem; padding: 0;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2023 Partie. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

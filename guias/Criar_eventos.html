@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <title>Partie</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="Criar_eventos.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0181f8b5db.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <h4 class="display-6" style="font-weight: 700;"><span class="text-primary">Par</span><span class="text-orange">tie</span></h4>
+        </a>
+        <div class="d-flex align-items-center justify-content-center">
+          <h4 class="mb-0 ms-3" style="color: purple;">
+            <a href="#" style="color: #ff6c3e; text-decoration: none;">Meus eventos</a>
+          </h4>
+        </div>
+        <div class="d-flex align-items-center" role="search">
+          <button style="background: none; border: none;" class="me-2">
+           <a href="perguntas.html"> <i class="fa-regular fa-circle-question fa-lg" style="color: #000000;"></i></a>
+          </button>
+
+          <a href="login.html">
+            <button class="btn btn-primary me-2">Login</button>
+          </a>
+          <a href="GerenciarEventos.html">
+          <button class="btn btn-outline-dark" type="submit">Criar evento</button>
+          </a>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!--
+  <header>
+    <nav style="width: 100%;" class="navbar bg-dark navbar-dark navbar-expand-lg bg-body-tertiary ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><h4 class="display-6" style="font-weight: 700;"><span class="text-primary">Par</span>tie</h4></a>
+        <div class="">
+          <h3 class="ce">Criação de Evento</h3>
+        </div>
+        <div class="d-flex" role="search">
+          <button style="background: none; border: none;" class="me-2">
+            <i class="fa-regular fa-circle-question fa-lg" style="color: #ffffff;"></i>
+          </button>
+          <button href="login.html" class="btn btn-primary me-2">Login</button>
+          <button href="Criar_eventos.html" class="btn btn-outline-light" type="submit">Criar evento</button>
+        </div>
+      </div>
+    </nav>
+  </header>-->
+  <main >
+    <div class="main">
+      <div>
+          <form class=" form row justify-content-md-center"> 
+            <div class="col-md-6 "><!-- Nome Evento-->
+              <label>Nome do Evento:</label>
+              <input type="text" class="form-control" placeholder="Nome do Evento">
+            </div>
+            <div class="col-md-2"><!-- Data Incio-->
+              <label>Data de Inicio:</label>
+              <input type="datetime-local" class="dt" id="meeting-time"  value="2023-06-27 T16:20" min="2023-06-27 T16:20">
+            </div>
+            <div class="col-md-2 "><!-- Data Final-->
+              <label>Data Final:</label>
+              <input type="datetime-local" class="dt" id="meeting-time" value="2023-06-27 T16:20" min="2023-06-27 T16:20">
+            </div> 
+            <div class="col-md-5"><!-- Nome do Organizador-->
+              <label>Nome do Organizador:</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Nome do Organizador">
+            </div>
+            <div class="col-md-5 "><!-- Localização-->
+              <label>Localização do Evento:</label>
+              <input type="text" class="form-control" id="inputCity" placeholder="Rua Exemplo numero 000">
+            </div>
+            <div class="col-md-5"><!--Importa_Imagem-->
+              <label>Selecionar Foto do Evento:</label>
+              <input type="file" class="arq_im" accept="image/png, image/jpeg">
+            </div>
+            <div class="col-md-5"><!--Descrição-->
+              <label>Descrição do Evento:</label>
+              <input type="text" class="des" placeholder="Descrição">
+            </input>
+            </div>
+            <div class="col-md-1 offset-md-8">
+              <a href="criadocomsucesso.html" class="btn btn-secondary custom-btn">Criar</a>
+            </div>
+          </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer bg-dark text-light footer-custom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-0 p-3">
+          <div class="centralizar">
+            <h4>Contatos</h4>
+            <p>Joinville, SC, BR</p>
+            <p>e-mail: contato@partie.co</p>
+            <p>Whatsapp: +55 (47) 9999-9999</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0 p-3">
+          <div class="centralizar">
+            <h4>
+              <a class="navbar-brand" href="index.html">
+                <h4 class="display-6" style="font-weight: 700;">
+                  <span class="text-primary">Par</span><span class="text-orange">tie</span>
+                </h4>
+              </a>
+            </h4>
+            <p><a href="login.html" style="color: white; text-decoration: none;">Login</a></p>
+            <p><a href="registrar.html" style="color: white; text-decoration: none;">Cadastrar</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-0 p-3">
+          <div class="centralizar">
+            <h4>Redes Sociais</h4>
+            <p><i class="fab fa-twitter"></i> @Partie</p>
+            <p><i class="fab fa-instagram"></i> @Partie</p>
+          </div>
+        </div>
+      </div>
+      <hr style="margin-top: 0.1rem; margin-bottom: 0.1rem; padding: 0;">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>&copy; 2023 Partie. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

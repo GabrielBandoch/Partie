@@ -1,0 +1,115 @@
+.text-primary {
+  color: #bd0003 !important;
+}
+
+.btn-primary {
+  background-color: #bd0003 !important;
+  border: 1px solid #7f0000 !important;
+}
+
+.bg-dark {
+  background-color: #7f0000 !important;
+}
+
+.text-orange {
+  color: #ff6c3e;
+}
+
+.centralizar {
+  text-align: center;
+}
+
+.footer-custom {
+  height: 250px;
+}
+
+.custom-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-center{
+  color: #fff;
+  padding-top: 5px;
+}
+
+body {
+  background: linear-gradient(to bottom, #7f0000, #ffa372);
+}
+
+
+
+.layout {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 400px;
+  top: 50px;
+  display: block;
+  position: relative;
+  align-items: center;
+
+}
+
+.accordion {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 5px;
+}
+
+.accordion__question p {
+  top: 100px;
+  font-family: Verdana;
+  font-size: 20px;
+  color: #000000;
+
+}
+
+.accordion__answer p {
+  margin: 5px;
+  padding: 10px;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background: white;
+  border-radius: 5px;
+}
+
+.accordion__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #fff;
+}
+
+.accordion.active .accordion__answer {
+  max-height: 500px;
+}
+
+.form-control{
+  width: 400px;
+}
+
+.btn-secondary.custom-btn{
+  width: 115px;
+  background-color: #bd0003;
+}
+
+.btn-secondary.custom-btn:hover{
+  background-color: #000000;
+}
+
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #bd0003;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.custom-space {
+  margin-bottom: 2000px;
+}

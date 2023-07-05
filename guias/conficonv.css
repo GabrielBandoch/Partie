@@ -1,0 +1,61 @@
+.text-primary {
+    color: #bd0003 !important;
+}
+
+.btn-primary {
+    background-color: #bd0003 !important;
+    border: 1px solid #7f0000 !important;
+}
+
+.bg-dark {
+    background-color: #7f0000 !important;
+}
+
+.card {
+    width: 50%;
+    margin: auto;
+}
+
+.center-align {
+    display: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+.text-orange {
+    color: #ff6c3e;
+  }
+
+  .centralizar {
+    padding: 1px; 
+  }
+  .footer-custom {
+    height: 250px; 
+    
+  }
+  .centralizar {
+    text-align: center;
+}
+.custom-text {
+    font-size: 24px; 
+    font-weight: bold; 
+  }
+
+.confirm {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.btn-secondary.custom-btn{
+  width: 115px;
+  background-color: #bd0003;
+}
+
+.btn-secondary.custom-btn:hover{
+  background-color: black;
+}
