@@ -13,4 +13,3 @@ Claudinei Dias
 # 📃 1° Semestre da faculdade:
 
 - Trabalho feito no 1° Semestre da faculdade.
-- Muito a melhorar ainda ...
